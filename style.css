@@ -6,8 +6,8 @@
 nav{
     background-color: rgb(249, 182, 216);
     color: rgb(252, 252, 252); /*MyTicTacToe.com Color*/
-    height: 80px; /*height of the pink bar*/
-    font-size: 30px; /*MyTicTacToe.com size*/
+    height: 100px; /*height of the pink bar*/
+    font-size: 40px; /*MyTicTacToe.com size*/
     display: flex;
     align-items: center; /* center from top of pink bar*/
     padding: 0 10px; /*padding of MyTicTacToe.com from left and right*/
@@ -21,8 +21,7 @@ nav ul{
     background-color: rgb(207, 153, 207);
     display: flex;
     justify-content: center; /*content in the purple block will be aligned to center*/
-    margin-top: 50px; 
-    
+    margin-top: 30px; 
 }
 .container{
     display: grid;
@@ -43,11 +42,11 @@ nav ul{
     background-color:rgb(188, 45, 162) ;
 }
 .info{
-    font-size: 18px;
+    font-size: 30px;
 
 }
 .gameInfo h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .gameInfo{
     padding: 0 30px;
