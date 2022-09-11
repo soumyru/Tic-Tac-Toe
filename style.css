@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cinzel&family=Crimson+Text:ital@1&family=DynaPuff:wdth@96.1;100&family=Indie+Flower&family=Satisfy&family=Source+Serif+Pro:ital,wght@1,300&family=Square+Peg&display=swap');
+*{
+    margin: 0; /* Pink bar containing MyTicTacToe.com margin from top */
+    padding: 0;
+}
+nav{
+    background-color: rgb(249, 182, 216);
+    color: rgb(252, 252, 252); /*MyTicTacToe.com Color*/
+    height: 80px; /*height of the pink bar*/
+    font-size: 30px; /*MyTicTacToe.com size*/
+    display: flex;
+    align-items: center; /* center from top of pink bar*/
+    padding: 0 10px; /*padding of MyTicTacToe.com from left and right*/
+    font-family: "DynaPuff", "san-serif";
+}
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    background-color: rgb(207, 153, 207);
+    display: flex;
+    justify-content: center; /*content in the purple block will be aligned to center*/
+    margin-top: 50px; 
+    
+}
+.container{
+    display: grid;
+    grid-template-rows:repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'DynaPuff', sans-serif;
+    position: relative;
+}
+.box{
+    border: 2px solid rgb(247, 97, 134);
+    font-size: 7vw;/*size of X and O*/
+    cursor: pointer;
+    display: flex; 
+    justify-content: center; /*displays the X in the center of the box*/
+    align-items: center;
+}
+.box:hover{
+    background-color:rgb(188, 45, 162) ;
+}
+.info{
+    font-size: 18px;
+
+}
+.gameInfo h1{
+    font-size: 1.5rem;
+}
+.gameInfo{
+    padding: 0 30px;
+    font-family: "DynaPuff", "sans-serif";
+    font-size: 10px;
+    color: rgb(247, 97, 134);
+
+}
+.imgbox img{
+    width:0px;
+    transition: width is ease-in-out;
+
+}
+.br-0{
+    border-right: 0; /*this will vanish the right side of the grid*/
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+    
+}
+.bb-0{
+    border-bottom: 0;
+
+}
+#reset{
+margin: 0 25px;
+padding: 8px 16px;
+background: rgb(244, 244, 98);
+border-radius: 60px;
+border-color: rgb(188, 45, 162);
+cursor: pointer;
+font-family: "DynaPuff", "sans-serif";
+font-size: 15px ;
+}
+
+.line{
+    background-color:rgb(247, 97, 134);
+    height: 3px;
+    width:0;
+    transition: width is ease-in-out;
+    position: absolute;
+
+}
+@media screen and(max-width:950px) {
+    .gameContainer{
+        flex-wrap: wrap;
+
+    }
+    .gameInfo{
+        margin-top: 30px;
+
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+}
